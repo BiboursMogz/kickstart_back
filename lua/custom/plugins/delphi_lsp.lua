@@ -1,0 +1,27 @@
+-- local lspconfig = require('lspconfig');
+-- local configs = require('lspconfig.configs');
+--
+-- -- Check if the config is already defined (useful when reloading this file)
+-- if not configs.delphi_lsp then
+-- 	configs.delphi_lsp = {
+-- 		default_config = {
+-- 			cmd = {'cmd.exe', '/C', '"C:\\Program Files (x86)\\Embarcadero\\Studio\\21.0\\bin\\DelphiLSP.exe"'},
+-- 			filetypes = {'pascal'},
+-- 			root_dir = lspconfig.util.root_pattern('*.delphilsp.json'),
+-- 			-- root_dir = "C:/Users/Bibours/Documents/codes/delphi/AutoFicheTemps",
+-- 			init_options = {
+-- 				serverType = "controller",
+-- 				agentCount = 2,
+-- 				returnDccFlags = true,
+-- 				returnHoverModel = true,
+-- 				storeProjectSettings = false,
+-- 			},
+-- 		},
+-- 	}
+-- end;
+--
+-- lspconfig.delphi_lsp.setup{
+-- 	settingsFile = '"file:///C:\\Users\\Bibours\\Documents\\codes\\delphi\\AutoFicheTemps\\AutoFicheTemps.delphilsp.json"',
+-- }
+
+return {};
