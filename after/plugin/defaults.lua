@@ -18,3 +18,12 @@ vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGai
 })
 
 vim.o.cursorline = true;
+
+vim.diagnostic.config({
+  -- float = {},
+  severity_sort = true,
+  -- signs = true,
+  -- underline = true,
+  -- update_in_insert = false,
+  virtual_text = false,
+});
