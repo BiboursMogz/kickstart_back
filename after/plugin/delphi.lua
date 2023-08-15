@@ -26,6 +26,9 @@ end;
 local function find_delphi_lsp_settingfile()
 	local a = util.root_pattern('*.delphilsp.json');
 	local b = a(util.path.sanitize(vim.loop.cwd()))
+	if b == nil then
+		return '';
+	end;
 	local c = vim.split(vim.fn.glob(b .. '/*'), '\n')
 	for _, d in pairs(c) do
 		if string.find(d, 'delphilsp') then
