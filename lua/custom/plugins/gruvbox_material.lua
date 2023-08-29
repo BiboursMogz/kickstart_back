@@ -19,6 +19,11 @@ return {
 		]];
 		vim.cmd.colorscheme 'gruvbox-material';
 
+		local hl_groups = { 'DiagnosticUnderlineError', 'DiagnosticUnderlineWarn', 'DiagnosticUnderlineInfo', 'DiagnosticUnderlineHint'};
+		for _, hl in ipairs(hl_groups) do
+			vim.cmd.highlight(hl .. ' gui=underline');
+		end;
+
 		local c = require('lualine').get_config();
 		c.theme =  'gruvbox-material';
 		require('lualine').setup{
