@@ -12,6 +12,7 @@ if not configs.delphi_lsp then
 		filetypes = {'pascal'},
 			root_dir = util.root_pattern('*.delphilsp.json'),
 			init_options = {
+				-- From: https://docwiki.embarcadero.com/RADStudio/Alexandria/en/Using_DelphiLSP_Code_Insight_with_Other_Editors
 				serverType = "controller",
 				agentCount = 2,
 				returnDccFlags = false,
