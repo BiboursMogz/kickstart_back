@@ -27,3 +27,5 @@ vim.diagnostic.config({
   -- update_in_insert = false,
   virtual_text = false,
 });
+
+vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { silent = true })
