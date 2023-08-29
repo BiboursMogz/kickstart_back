@@ -28,4 +28,7 @@ vim.diagnostic.config({
   virtual_text = false,
 });
 
-vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { silent = true })
+vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { silent = true });
+
+vim.keymap.set('n', '<C-d>', '<C-d>z.', {silent = true});
+vim.keymap.set('n', '<C-u>', '<C-u>z.', {silent = true});
