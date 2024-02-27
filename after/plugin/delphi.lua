@@ -8,7 +8,7 @@ vim.wo.colorcolumn = "120";
 if not configs.delphi_lsp then
 	configs.delphi_lsp = {
 		default_config = {
-			cmd = {'C:\\Program Files (x86)\\Embarcadero\\Studio\\21.0\\bin\\DelphiLSP.exe'},
+			cmd = {'C:\\Program Files (x86)\\Embarcadero\\Studio\\23.0\\bin\\DelphiLSP.exe'},
 		filetypes = {'pascal'},
 			root_dir = util.root_pattern('*.delphilsp.json'),
 			init_options = {
